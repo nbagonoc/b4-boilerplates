@@ -1,0 +1,46 @@
+// VARIABLES
+@import "variables";
+// CLASSES
+@import "classes";
+// MIXINS
+@import "mixins";
+// NAVBAR
+// @import "navbar";
+// COVER
+@import "covers";
+// CAROUSEL
+@import "carousels";
+// BANNERS
+@import "banners";
+// BUTTONS
+@import "buttons";
+
+body,
+html {
+  height: 100%;
+  color: $dark;
+  font-size: $sm;
+  //   font-family: "Montserrat", sans-serif !important;
+  font-weight: lighter;
+  font-style: normal;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold !important;
+    font-style: normal;
+  }
+}
+
+/* vertical align elements */
+.vetical-align {
+  position: relative;
+}
+.vertical-align-item {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
