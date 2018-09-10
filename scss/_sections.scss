@@ -1,0 +1,11 @@
+// CARD IMAGE TOP
+.card-img-top {
+  height: 200px;
+  @include card-img-settings;
+}
+
+// CARD IMAGE TEXT
+.card-img-text {
+  height: 350px;
+  @include card-img-settings;
+}
