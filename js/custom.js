@@ -9,7 +9,7 @@ $(document).ready(function() {
   );
 
   // Banner slider image
-  $(".banner-c").backstretch(
+  $(".banner-b").backstretch(
     ["img/cover-a.jpg", "img/cover-b.jpg", "img/cover-c.jpg"],
     {
       fade: 1000,

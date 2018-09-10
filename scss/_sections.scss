@@ -4,6 +4,12 @@
   @include card-img-settings;
 }
 
+// CARD IMAGE SIDE
+.card-img-side {
+  height: 100%;
+  @include card-img-settings;
+}
+
 // CARD IMAGE TEXT
 .card-img-text {
   height: 350px;

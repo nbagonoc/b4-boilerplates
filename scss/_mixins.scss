@@ -9,18 +9,20 @@
 
 @mixin cover-settings {
   height: 100%;
-  position: relative;
   @include cover;
 }
 
 @mixin banner-settings {
   height: 350px;
-  position: relative;
+  @include cover;
+}
+
+@mixin background-settings {
+  background-attachment: fixed;
   @include cover;
 }
 
 @mixin card-img-settings {
-  position: relative;
   background-position: center center;
   @include cover;
 }
