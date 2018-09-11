@@ -1,29 +1,34 @@
 // extra small
 @media (max-width: 566px) {
+  @include navbar-a-mobile;
   .card-img-side {
     height: 200px;
   }
 }
 // small
 @media (min-width: 567px) {
+  @include navbar-a-mobile;
   .card-img-side {
     height: 200px;
   }
 }
 // medium
 @media (min-width: 768px) {
+  @include navbar-a-desktop;
   .card-img-side {
     height: 100%;
   }
 }
 // large
 @media (min-width: 992px) {
+  @include navbar-a-desktop;
   .card-img-side {
     height: 100%;
   }
 }
 // extra large
 @media (min-width: 1200px) {
+  @include navbar-a-desktop;
   .card-img-side {
     height: 100%;
   }

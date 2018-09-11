@@ -40,3 +40,38 @@
 .text-xl {
   font-size: $xl !important;
 }
+
+// VERTICAL ALIGN
+// vertical align with hight being % specified. May have problems with ie7
+.vertical-align {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .vertical-align-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+// IMAGE SIZE
+.img-size-xs {
+  height: 75px;
+  width: 75px;
+}
+.img-size-sm {
+  height: 100px;
+  width: 100px;
+}
+.img-size-md {
+  height: 125px;
+  width: 125px;
+}
+.img-size-lg {
+  height: 150px;
+  width: 150px;
+}
+.img-size-xl {
+  height: 250px;
+  width: 250px;
+}

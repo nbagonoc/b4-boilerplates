@@ -4,72 +4,23 @@
 @import "classes";
 // MIXINS
 @import "mixins";
+
+// GLOBAL
+@import "global";
+
+// BACKGROUNDS
+@import "backgrounds";
 // NAVBAR
-// @import "navbar";
+@import "navbars";
 // COVER
 @import "covers";
 // CAROUSEL
 @import "carousels";
 // BANNERS
 @import "banners";
-// BACKGROUNDS
-@import "backgrounds";
 // SECTIONS
 @import "sections";
 // BUTTONS
 @import "buttons";
 // MEDIA QUERIES
 @import "media-queries";
-
-body,
-html {
-  height: 100%;
-  color: $dark-grey;
-  font-size: $sm;
-  //   font-family: "Montserrat", sans-serif !important;
-  font-weight: lighter;
-  font-style: normal;
-  a {
-    text-decoration: none !important;
-  }
-  h1,
-  h2 {
-    color: $dark;
-    font-weight: bold !important;
-    font-style: normal;
-  }
-  h3,
-  h4,
-  h5 {
-    color: $dark-grey;
-    font-weight: normal !important;
-    font-style: normal;
-  }
-}
-
-// VERTICAL ALIGN
-// vertical align with hight being % specified. May have problems with ie7
-.vertical-align {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  .vertical-align-item {
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-
-// circle img
-.img-size-xs {
-  height: 75px;
-  width: 75px;
-}
-.img-size-sm {
-  height: 100px;
-  width: 100px;
-}
-.img-size-md {
-  height: 125px;
-  width: 125px;
-}

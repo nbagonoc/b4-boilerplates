@@ -1,0 +1,115 @@
+.navbar-a {
+  background: $red !important;
+  // Remove the dropdown carret
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .navbar-brand {
+    img {
+      height: 62px;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 25px 0 25px 25px;
+        color: rgba($white, 0.7);
+        &:hover {
+          color: $white;
+        }
+        &.active {
+          color: $white;
+        }
+      }
+      &.dropdown {
+        .dropdown-menu {
+          padding: 0;
+          margin-top: 0;
+          border: 0;
+          border-left: 1px solid $red;
+          border-right: 1px solid $red;
+          border-radius: 0;
+          .dropdown-item {
+            background: lighten($red, 5);
+            color: rgba($white, 0.7);
+            font-weight: 500;
+            text-transform: capitalize;
+            padding: 10px 25px;
+            border-bottom: 1px solid $red;
+            &:hover,
+            &.active {
+              background: $red;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin navbar-a-mobile {
+  .navbar-a {
+    // custom Burger icon
+    .navbar-toggler {
+      border-color: $white;
+      .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          border-top: 1px solid rgba($white, 0.3);
+          padding: 10px 0;
+        }
+        &.dropdown {
+          .dropdown-menu {
+            .dropdown-item {
+              background: $red;
+              padding: 10px 0 10px 20px;
+              border-top: 1px solid rgba($white, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin navbar-a-desktop {
+  .navbar-a {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          border-top: none;
+          padding: 25px 0 25px 25px;
+        }
+        &.dropdown {
+          .dropdown-menu {
+            .dropdown-item {
+              background: lighten($red, 5);
+              padding: 10px 25px 10px 25px;
+              border-top: none;
+              border-bottom: 1px solid $red;
+            }
+          }
+          // make parent menu item active when hovering sub-items
+          &:hover > .nav-link {
+            color: $white;
+          }
+          // dropdown on hover
+          &:hover > .dropdown-menu {
+            display: block;
+          }
+          // Without this, clicking will make it sticky
+          .dropdown-toggle:active {
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
