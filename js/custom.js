@@ -18,20 +18,20 @@ $(document).ready(function() {
   );
 
   // scroll spy navbar
-  // function checkScroll() {
-  //   var startY = $(".navbar").height() * 1; //The point where the navbar changes in px
+  function checkScroll() {
+    var startY = $(".navbar-b").height() * 1; //The point where the navbar changes in px
 
-  //   if ($(window).scrollTop() > startY) {
-  //     $(".navbar").addClass("scrolled shadow-sm");
-  //   } else {
-  //     $(".navbar").removeClass("scrolled shadow-sm");
-  //   }
-  // }
-  // if ($(".navbar").length > 0) {
-  //   $(window).on("scroll load resize", function() {
-  //     checkScroll();
-  //   });
-  // }
+    if ($(window).scrollTop() > startY) {
+      $(".navbar-b").addClass("scrolled shadow-sm");
+    } else {
+      $(".navbar-b").removeClass("scrolled shadow-sm");
+    }
+  }
+  if ($(".navbar-b").length > 0) {
+    $(window).on("scroll load resize", function() {
+      checkScroll();
+    });
+  }
 
   // Animation
   $(".slide-from-right")
