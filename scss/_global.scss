@@ -1,11 +1,14 @@
 body,
 html {
   height: 100%;
-  color: $dark-grey;
+  color: $grey;
   font-size: $sm;
-  //   font-family: "Montserrat", sans-serif !important;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-style: normal;
+  p {
+    font-family: "Slabo 27px", serif;
+  }
   a {
     text-decoration: none !important;
   }
