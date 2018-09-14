@@ -24,6 +24,56 @@
   color: $dark !important;
 }
 
+// color classes
+.link-red {
+  color: $red;
+  &:hover {
+    color: darken($red, 10);
+  }
+}
+.link-blue {
+  color: $blue;
+  &:hover {
+    color: darken($blue, 10);
+  }
+}
+.link-green {
+  color: $green;
+  &:hover {
+    color: darken($green, 10);
+  }
+}
+.link-white {
+  color: $white;
+  &:hover {
+    color: darken($white, 40);
+  }
+}
+.link-light {
+  color: $light;
+  &:hover {
+    color: darken($light, 30);
+  }
+}
+.link-grey {
+  color: $grey;
+  &:hover {
+    color: darken($grey, 10);
+  }
+}
+.link-dark-grey {
+  color: $dark-grey;
+  &:hover {
+    color: $light;
+  }
+}
+.link-dark {
+  color: $dark;
+  &:hover {
+    color: $light;
+  }
+}
+
 // font size classes
 .text-xs {
   font-size: $xs !important;
