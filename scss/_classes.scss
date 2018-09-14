@@ -26,33 +26,33 @@
 
 // color classes
 .link-red {
-  color: $red;
+  color: rgba($red, 0.7);
   &:hover {
-    color: darken($red, 10);
+    color: $red;
   }
 }
 .link-blue {
-  color: $blue;
+  color: rgba($blue, 0.7);
   &:hover {
-    color: darken($blue, 10);
+    color: $blue;
   }
 }
 .link-green {
-  color: $green;
+  color: rgba($green, 0.7);
   &:hover {
-    color: darken($green, 10);
+    color: $green;
   }
 }
 .link-white {
-  color: $white;
+  color: rgba($white, 0.7);
   &:hover {
-    color: darken($white, 40);
+    color: $white;
   }
 }
 .link-light {
-  color: $light;
+  color: rgba($light, 0.7);
   &:hover {
-    color: darken($light, 30);
+    color: $light;
   }
 }
 .link-grey {
@@ -62,15 +62,15 @@
   }
 }
 .link-dark-grey {
-  color: $dark-grey;
+  color: rgba($dark-grey, 0.7);
   &:hover {
-    color: $light;
+    color: $dark-grey;
   }
 }
 .link-dark {
-  color: $dark;
+  color: rgba($dark, 0.7);
   &:hover {
-    color: $light;
+    color: $dark;
   }
 }
 
