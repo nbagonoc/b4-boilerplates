@@ -67,4 +67,19 @@ $(document).ready(function() {
       );
     event.preventDefault();
   });
+
+  // Show/hide scroll to top button
+  window.onscroll = function() {
+    scrollFunction();
+  };
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 999 ||
+      document.documentElement.scrollTop > 999
+    ) {
+      $(".scroll-to-top").addClass("d-block");
+    } else {
+      $(".scroll-to-top").removeClass("d-block");
+    }
+  }
 });
