@@ -54,3 +54,15 @@
     }
   }
 }
+
+@mixin footer-b-desktop {
+  .footer-b {
+    text-align: left;
+  }
+}
+
+@mixin footer-b-mobile {
+  .footer-b {
+    text-align: center;
+  }
+}

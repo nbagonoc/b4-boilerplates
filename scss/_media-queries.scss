@@ -6,6 +6,7 @@
     height: 200px;
   }
   @include footer-a-mobile;
+  @include footer-b-mobile;
 }
 // small
 @media (min-width: 567px) {
@@ -15,6 +16,7 @@
     height: 200px;
   }
   @include footer-a-mobile;
+  @include footer-b-mobile;
 }
 // medium
 @media (min-width: 768px) {
@@ -24,6 +26,7 @@
     height: 100%;
   }
   @include footer-a-desktop;
+  @include footer-b-desktop;
 }
 // large
 @media (min-width: 992px) {
@@ -33,6 +36,7 @@
     height: 100%;
   }
   @include footer-a-desktop;
+  @include footer-b-desktop;
 }
 // extra large
 @media (min-width: 1200px) {
@@ -42,4 +46,5 @@
     height: 100%;
   }
   @include footer-a-desktop;
+  @include footer-b-desktop;
 }
