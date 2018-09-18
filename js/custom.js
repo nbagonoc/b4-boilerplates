@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  /*adds active class to the 1st child for banner slider*/
+  // $(".carousel-inner")
+  //   .find(".carousel-item:first")
+  //   .addClass("active");
+
   // Cover slider image
   $(".cover-c").backstretch(
     ["img/cover-a.jpg", "img/cover-b.jpg", "img/cover-c.jpg"],
